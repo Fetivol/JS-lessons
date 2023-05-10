@@ -142,3 +142,17 @@
 //   }
 //   return total;
 // }
+
+// function findLongestWord(string) {
+//   let array = string.split(' ');
+//   let maxLength = array[0].length;
+//   let longestWord = array[0];
+//   for (let i = 0; i < array.length - 1; i += 1) {
+//     if (array[i].length > maxLength) {
+//       longestWord = array[i];
+//       maxLength = array[i].length;
+//     }
+//   }
+//   return longestWord;
+// }
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
