@@ -80,3 +80,65 @@
 // const firstTwoEls = fruits.slice(0, 2);
 // const nonExtremeEls = fruits.slice(1, fruits.length - 1);
 // const lastThreeEls = fruits.slice(-3);
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+// const allClients = oldClients.concat(newClients);
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let array = firstArray.concat(secondArray);
+//   array =
+//     firstArray.concat(secondArray).length > maxLength
+//       ? firstArray.concat(secondArray).splice(0, maxLength)
+//       : firstArray.concat(secondArray);
+
+//   return array;
+// }
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let array = firstArray.concat(secondArray);
+//   array =
+//     firstArray.concat(secondArray).length > maxLength
+//       ? firstArray.concat(secondArray).slice(0, maxLength)
+//       : firstArray.concat(secondArray);
+
+//   return array;
+// }
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+//   console.log(i);
+// }
+
+// function calculateTotal(number) {
+//   let a = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     a = a + i;
+//   }
+//   return a;
+// }
+// function calculateTotal(number) {
+//   if (number == 1) return 1;
+//   return number + calculateTotal(number - 1);
+// }
+// console.log(calculateTotal(3));
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
