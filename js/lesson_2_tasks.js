@@ -156,3 +156,65 @@
 //   return longestWord;
 // }
 // console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+
+// function findLongestWord(string) {
+//   let array = string.split(' ');
+//   maxLength = array[0].length;
+//   let longestWord = array[0];
+//   for (let i = 0; i < array.length - 1; i += 1) {
+//     if (array[i].length > maxLength) {
+//       longestWord = array[i];
+//       maxLength = array[i].length;
+//     }
+//   }
+//   return longestWord;
+// }
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i++) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 5));
+
+// function filterArray(numbers, value) {
+//   let array = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (value < numbers[i]) {
+//       array.push(numbers[i]);
+//     }
+//   }
+//   return array;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+//   return fruits.includes(fruit);
+// }
+
+// function getCommonElements(array1, array2) {
+//   let a = [];
+//   if (array1.length >= array2.length) {
+//     for (let i = 0; i < array1.length; i++) {
+//       let b = array1[i];
+//       if (array2.includes(b)) {
+//         a.push(b);
+//       }
+//     }
+//   } else {
+//     for (let i = 0; i < array2.length; i++) {
+//       let b = array1[i];
+//       if (array2.includes(b)) {
+//         a.push(b);
+//       }
+//     }
+//   }
+
+//   return a;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
