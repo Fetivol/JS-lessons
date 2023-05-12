@@ -218,3 +218,80 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (let item of order) {
+//     total += item;
+//   }
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+//   return total;
+// }
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   const number = numbers[i];}
+//   for (let number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+// }
+
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// function getEvenNumbers(start, end) {
+//   arr = [];
+//   for (let i = start; i <= end; i++) {
+//     if (!(i % 2)) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// function findNumber(start, end, divisor) {
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return number;
+//     }
+//   }
+// }
+
+function includes(array, value) {
+  let a = false;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    } else continue;
+  }
+  return a;
+}
+console.log(
+  includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter')
+);
+console.log(includes([1, 2, 3, 4, 5], 3));
