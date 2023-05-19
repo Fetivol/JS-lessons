@@ -37,7 +37,7 @@
 // }
 // console.log(numbers);
 
-const a = [1, 2, 3, 4, 5];
-for (let i = 0, n = 1; i <= a.length - 1; i++, n += 1) {
-  console.log(`${n} ${a[i]} ${a.length}`);
-}
+// const a = [1, 2, 3, 4, 5];
+// for (let i = 0, n = 1; i <= a.length - 1; i++, n += 1) {
+//   console.log(`${n} ${a[i]} ${a.length}`);
+// }
