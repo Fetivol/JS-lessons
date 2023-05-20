@@ -226,6 +226,24 @@
 //   rgbColors.push(color.rgb);
 // }
 
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+// }
+
+// console.log(getProductPrice(''));
+
 const products = [
   { name: 'Radar', price: 1300, quantity: 4 },
   { name: 'Scanner', price: 2700, quantity: 3 },
@@ -233,14 +251,20 @@ const products = [
   { name: 'Grip', price: 1200, quantity: 9 },
 ];
 
-function getProductPrice(productName) {
-  for (const product of products) {
-    if (product.name === productName) {
-      return product.price;
-    } else if (product.name !== productName) {
-      return null;
+function getAllPropValues(propName) {
+  const arr = [];
+
+  for (let product of products) {
+    console.log(Object.keys(product));
+    console.log(product[propName]);
+    for (let key in product) {
+      console.log(key);
+      if (key == propName) {
+        console.log(product[key]);
+        arr.push(product[key]);
+      }
     }
   }
+  return arr;
 }
-
-console.log(getProductPrice(''));
+console.log(getAllPropValues('name'));
