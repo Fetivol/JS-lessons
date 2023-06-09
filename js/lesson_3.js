@@ -525,6 +525,7 @@ const atTheOldToad = {
     const arr = [];
     for (potion of this.potions) {
       arr.push(potion);
+      console.log(arr);
     }
     return arr;
   },
@@ -539,6 +540,7 @@ const atTheOldToad = {
   removePotion(potionName) {
     let message = '';
     for (potion of this.potions) {
+      console.log(potion);
       if (potion.name === potionName) {
         let index = this.potions.indexOf(potion);
         console.log(index);
@@ -552,6 +554,7 @@ const atTheOldToad = {
   updatePotionName(oldName, newName) {
     let message = '';
     for (potion of this.potions) {
+      console.log(potion);
       if (potion.name === oldName) {
         potion.name = newName;
         return potion;
@@ -562,8 +565,8 @@ const atTheOldToad = {
     return message;
   },
 };
-console.log(atTheOldToad.getPotions());
-console.log(atTheOldToad.addPotion({ name: 'Stone skin', price: 240 }));
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: 'Stone skin', price: 240 }));
 // console.log(atTheOldToad.getPotions());
 // console.log(atTheOldToad.removePotion('Dragon breath'));
-// console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
+console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
